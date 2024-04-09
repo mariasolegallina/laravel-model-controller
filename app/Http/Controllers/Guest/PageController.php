@@ -11,4 +11,9 @@ class PageController extends Controller
     {
         return view('guest.index');
     }
+
+    public function movies()
+    {
+        return view('guest.movies');
+    }
 }

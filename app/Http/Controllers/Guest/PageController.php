@@ -10,14 +10,14 @@ class PageController extends Controller
 {
     public function index()
     {
-        return view('guest.index');
-    }
-
-    public function movies()
-    {
         $movies = Movie::all();
         // dd($movies);
 
-        return view('guest.movies', compact('movies'));
+        return view('guest.index', compact('movies'));
+    }
+
+    public function about()
+    {
+        return view('guest.about');
     }
 }
